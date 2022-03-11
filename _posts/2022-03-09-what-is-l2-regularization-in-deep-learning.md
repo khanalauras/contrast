@@ -20,13 +20,13 @@ Here, L could be any loss function that we use depending on our predictive task 
 
 When we apply L2 regularization, we add a component to our existing cost function. The cost function that is used is given by: 
  
-$$ J(w,b)=\frac{1}{m}\sum{i=1}^m L(\hat{y^i},y^i) +\frac{\lambda}{2m}{{||w^{[l]}||}_2}^2 $$ 
+$$ J(w,b)=\frac{1}{m}\sum{i=1}^m L(\hat{y^i},y^i) +\frac{\lambda}{2m}{{||w^l||}_2}^2 $$ 
 
-where $$ {{||w^{[l]}||}_2}^2= \sum{i=1}^{n^[l]} \sum{j=1}^{n^[l-1]} ( {w_{i,j}}^{[l]} )^2 $$ (Frobenius Norm Formula)
+where $$ {{||w^l||}_2}^2= \sum{i=1}^{n^[l]} \sum{j=1}^{n^[l-1]} ( {w_{i,j}}^{l} )^2 $$ (Frobenius Norm Formula)
 
-We can see that we have added $$ \frac{\lambda}{2m}{{||w^{[l]}||}_2}^2 $$. 
+We can see that we have added $$ \frac{\lambda}{2m}{{||w^l||}_2}^2 $$. 
 
-Here, $$ \lambda $$ denotes the regularization parameter and $$ ||w^{[l]}|| $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
+Here, $$ \lambda $$ denotes the regularization parameter and $$ ||w^l|| $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
 
 ## Intuition behind L2 Regularization
 
