@@ -20,9 +20,9 @@ Here, L could be any loss function that we use depending on our predictive task 
 
 When we apply L2 regularization, we add a component to our existing cost function. The cost function that is used is given by, 
  
-$$ J(w,b)=\frac{1}{m}\sum_{i=1}^m L(\hat{y^i},y^i) + \frac{\lambda}{2m} ||w^[l]||^2   $$  
+$$ J(w,b)=\frac{1}{m}\sum_{i=1}^m L(\hat{y^i},y^i) + \frac{\lambda}{2m} ||w^{[l]}|\|^2 $$  
 
-where $$ ||w^[l]||^2= \sum_{i=1}^{n^[l]} \sum_{j=1}^{n^[l-1]} ( {w_{i,j}}^{l})^2 $$ (Frobenius Norm Formula)
+where $$ ||w^{[l]}||^2 = \sum_{i=1}^{n^[l]} \sum_{j=1}^{n^[l-1]} ( {w_{i,j}}^{l})^2 $$ (Frobenius Norm Formula)
 
 We can see that we have added $$ \frac{\lambda}{2m} ||w^[l]||^2 $$. 
 
