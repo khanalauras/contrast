@@ -20,13 +20,13 @@ Here, L could be any loss function that we use depending on our predictive task 
 
 When we apply L2 regularization, we add a component to our existing cost function. The cost function that is used is given by: 
  
-$$ J(w,b)=\frac{1}{m}\sum_{i=1}^m L(\hat{y^i},y^i) +\frac{\lambda}{2m}{{||w^l||}_2}^2   $$ 
+$$ J(w,b)=\frac{1}{m}\sum_{i=1}^m L(\hat{y^i},y^i) + \frac{\lambda}{2m} {{\lVert w^[l] \rVert}_2}^2   $$ 
 
-where $$ {{||w^l||}_2}^2= \sum_{i=1}^{n^[l]} \sum_{j=1}^{n^[l-1]} ( {w_{i,j}}^{l} )^2 $$ (Frobenius Norm Formula)
+where $$ {{\lVert w^[l] \rVert}_2}^2= \sum_{i=1}^{n^[l]} \sum_{j=1}^{n^[l-1]} ( {w_{i,j}}^{l} )^2 $$ (Frobenius Norm Formula)
 
-We can see that we have added $$ \frac{\lambda}{2m}{{||w^l||}_2}^2 $$. 
+We can see that we have added $$ \frac{\lambda}{2m}{{\lVert w^[l] \rVert}_2}^2 $$. 
 
-Here, $$ \lambda $$ denotes the regularization parameter and $$ ||w^l|| $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
+Here, $$ \lambda $$ denotes the regularization parameter and $$ \lVert w^[l] \rVert $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
 
 ## Intuition behind L2 Regularization
 
@@ -34,11 +34,8 @@ How does adding the extra component to our cost function prevent or reduce overf
 
 $$ \frac{\partial L_2}{\partial w} = \frac{\partial L}{\partial w} + \frac{\partial L2}{\partial w}  $$
 
-Here, L2 denotes the regularization component we added to the cost function. This component is always positive as we square $$ ||w||_2 $$.  Now, we also know that,
+Here, L2 denotes the regularization component we added to the cost function. This component is always positive as we square $$ {\lVert w^l \rVert}_2 $$.  Now, we also know that,
 
 $$ w_new = w_old - \eta \frac{\partial Loss}{\partial w} $$
 
 Hence, by adding regularization, we increase the value of the partial derivative and consequently $$ w_new $$ becomes a different value, shifting away from the weight value which resulted in the model overfitting on the dataset. This new weight is not the perfect ideal weight during training, however it will help the model to generalize and perform accurately on test or development datasets.
-
----
-Auras Khanal
