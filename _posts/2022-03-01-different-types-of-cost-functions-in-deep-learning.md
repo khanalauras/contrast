@@ -48,3 +48,5 @@ $$ L(x_i , y_i) = - \sum_{i=1}^t \sum_{j=1}^c y_{ij} \log{}(\hat{y_{ij}}) $$ , w
 And the categorical cross entropy loss when we update parameters after each r
 Here, $$ y_i $$ is a one-hot encoded target vector where i specifies the record or row number, i.e. $$ y_3 $$ denotes the target vector of record number 3. Hence,  $$ y_{ij} $$ denotes the jth item in the output vector of the ith record $$ ( j \leq c) $$. 
 
+---
+Auras Khanal
