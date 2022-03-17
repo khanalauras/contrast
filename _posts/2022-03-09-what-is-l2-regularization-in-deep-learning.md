@@ -40,3 +40,6 @@ Here, L2 denotes the regularization component we added to the cost function. Thi
 $$ w_{new} = w_{old} - \eta \frac{\partial Loss}{\partial w} $$
 
 Hence, by adding regularization, we increase the value of the partial derivative and consequently $$ w_{new} $$ becomes a different value, shifting away from the weight value which resulted in the model overfitting on the dataset. This new weight is not the perfect ideal weight during training, however it will help the model to generalize and perform accurately on test or development datasets.
+
+---
+Auras Khanal
