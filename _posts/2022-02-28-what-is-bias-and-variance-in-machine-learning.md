@@ -37,3 +37,6 @@ This is known as underfitting and will lead to high error in both the training a
 
 High Variance is usually caused when the model is not able to generalize its parameter values to other datasets. Hence, it is important to regulate the parameters to get rid of overfitting. The process of regulating is also known as regularization. Regularization helps prevent overfitting by adjusting the values of the parameters, usually to lower absolute values. Another method of preventing overfitting is by adding more data to allow our model to ignore noisy inputs. 
 High Bias is usually caused due to the over-simplicity of a model. Hence, we can easily solve this issue by using a more complicated model that can capture all the important features of our dataset. 
+
+---
+Auras Khanal
