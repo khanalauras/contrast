@@ -28,7 +28,7 @@ $$ {\|w^{[l]}\|_2}^2 = \sum_{i=1}^{n^{[l]}} \sum_{j=1}^{n^{[l-1]}} ( {w_{ij}}^{[
 
 This formula is also known as the Frobenius Norm Formula. We can see that we have added $$ \frac{\lambda}{2m} {\|w^{[l]}\|_2}^2 $$. 
 
-Here, $$ \lambda $$ denotes the regularization parameter and $$ \|w^{[l]}\| $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
+Here, $$ \lambda $$ denotes the regularization parameter and $$ \|w^{[l]}\| $$ denotes the norm of our weight vector or matrix of layer l of our network. Rows i of the matrix represent the number of neurons in the current layer l whereas the columns j represent the number of inputs of the previous layer l-1. Furthermore, $$ n^{[l]} $$ denotes the number of neurons in the current layer and $$ n^{[l-1]} $$ denotes the number of neurons in the previous layer. An important part of regularization is the regularization parameter $$ \lambda $$ which is set using the development set or hold out cross validation. 
 
 ## Intuition behind L2 Regularization
 
