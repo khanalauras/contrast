@@ -12,7 +12,7 @@ In machine learning models, especially neural networks, the loss function is a f
 
 ### 1. Mean Squared Error
 When dealing with Stochastic Gradient descent or any other optimization methods that update weights after every record, the squared error is given by,
-SE = $$ (y- \hat{y})^2 $$ . When dealing with batch optimizers we use the mean squared error given by MSE = $$ \sum_{i=1}^t (y-\hat{y})^2 $$ where t is the batch size. As the mean squared and the squared errors are both quadratic functions, we notice a convex curve when plotting the function. The disadvantage of the MSE error function is it is not robust to outliers, i.e. if the dataset has some outliers the mean squared error will punish the error values of the outliers more because the square of the difference will be more.  We can avoid this by using the absolute error loss.
+SE = $$ (y- \hat{y})^2 $$ . Here, $$ y $$ is the real output value whereas $$ \hat{y} $$ is our predicted output.  When dealing with batch optimizers we use the mean squared error given by MSE = $$ \sum_{i=1}^t (y-\hat{y})^2 $$ where t is the batch size. As the mean squared and the squared errors are both quadratic functions, we notice a convex curve when plotting the function. The disadvantage of the MSE error function is it is not robust to outliers, i.e. if the dataset has some outliers the mean squared error will punish the error values of the outliers more because the square of the difference will be more.  We can avoid this by using the absolute error loss.
 
 ![mse](/assets/mse.png)
 
@@ -45,7 +45,6 @@ Hence, when dealing with Stochastic Gradient descent or any other optimization m
 $$ L(x_i , y_i) = - \sum_{j=1}^c y_{ij} \log{}(\hat{y_{ij}}) $$ 
 When dealing with batch optimizers, the loss is given by:
 $$ L(x_i , y_i) = - \sum_{i=1}^t \sum_{j=1}^c y_{ij} \log{}(\hat{y_{ij}}) $$ , where t is the batch size
-And the categorical cross entropy loss when we update parameters after each r
 Here, $$ y_i $$ is a one-hot encoded target vector where i specifies the record or row number, i.e. $$ y_3 $$ denotes the target vector of record number 3. Hence,  $$ y_{ij} $$ denotes the jth item in the output vector of the ith record $$ ( j \leq c) $$. 
 
 ---
