@@ -1,5 +1,5 @@
 ---
-title: "What is L2 Regularization in Deep Learning?"
+title: "What is L2 Regularization?"
 mathjax: true
 layout: post
 ---
