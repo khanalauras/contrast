@@ -40,7 +40,7 @@ where i, j     denote the nth node of the output layer.
 Usually, we use sigmoid for binary and softmax for multiclass classification. Hence, our neural network will have a vector output consisting of c items:
 $$ \hat{y_{ij}} = [\sigma(z_1)    \sigma(z_2)    \sigma(z_3) ……    \sigma(z_c)] $$
 and each item will represent the probability of the record belonging to the class c. For multi class classification, we have to also remember to do one hot encoding on our target labels. One hot encoding will represent each category as a column and will represent the values of the columns as bits, where 1 denotes the record belongs to that categorical column and 0 denotes it does not. The target label will be a binary vector consisting of c items (the classes):
-$$ y_{ij} = [ class_1  class_2  class_3 ……. class_c ] \in [0,1] $$
+$$ y_{ij} = [ class_1 \enspace class_2 \enspace class_3 \enspace ……. \enspace class_c ] \in [0,1] $$
 Hence, when dealing with Stochastic Gradient descent or any other optimization methods that update weights after every record,the categorical cross entropy loss is:
 $$ L(x_i , y_i) = - \sum_{j=1}^c y_{ij} \log{}(\hat{y_{ij}}) $$ 
 When dealing with batch optimizers, the loss is given by:
