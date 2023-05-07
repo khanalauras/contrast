@@ -49,10 +49,4 @@ Here, $$ y_i $$ is a one-hot encoded target vector where i specifies the record 
 
 ---
 Auras Khanal
-Sure, here's the same explanation in markdown:
-
-To show that for any open ball $B$ in $\mathbb{R}^2$ around a point $(x,y)$, there will also be an open rectangle $U \times V$ in the product topology of $\mathbb{R}$ containing $(x,y)$ such that the points in the rectangle $U \times V$ will be contained in the ball $B$, we can use the following argument:
-
-Let $B((x,y),r)$ denote the open ball in $\mathbb{R}^2$ centered at $(x,y)$ with radius $r$, where $r>0$. Let $U=(x-\frac{r}{\sqrt{2}},x+\frac{r}{\sqrt{2}})$ and $V=(y-\frac{r}{\sqrt{2}},y+\frac{r}{\sqrt{2}})$ be open intervals in $\mathbb{R}$ centered at $x$ and $y$, respectively, with radius $\frac{r}{\sqrt{2}}$. Then, $U \times V$ is an open rectangle in the product topology of $\mathbb{R}$ containing $(x,y)$.
-
-Now, let $(a,b)$ be any point in $U \times V$. Then, $a \in U$ and $b \in V$, so $|a-x|<\frac{r}{\sqrt{2}}$ and $|b-y|<\frac{r}{\sqrt{2}}$. Therefore, by the triangle inequality, we have:
+This shows that $(a,b) \in B((x,y),r)$, so $U \times V \subseteq B((x,y),r)$. Therefore, we have shown that for any open ball $B$ in $\mathbb{R}^2$ around a point $(x,y)$, there exists an open rectangle $U \times V$ in the product topology of $\mathbb{R}$ containing $(x,y)$ such that the points in the rectangle $U \times V$ are contained in the ball $B$.
