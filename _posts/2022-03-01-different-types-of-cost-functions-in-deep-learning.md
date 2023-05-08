@@ -49,15 +49,3 @@ Here, $$ y_i $$ is a one-hot encoded target vector where i specifies the record 
 
 ---
 Auras Khanal
-
-To show that for any open rectangle/square $U\times V$ in $\mathbb{R} \times \mathbb{R}$ containing a point $(x,y)$, there will also be an open ball $B$ in $\mathbb{R}^2$ containing $(x,y)$ such that the points in the ball will be contained in the rectangle/square $U \times V$, we can use the following argument:
-
-Without loss of generality, assume that $U$ and $V$ are open intervals. Let $a = \min{x-u: u \in U}$ and $b = \min{y-v: v \in V}$, and let $r = \min{a,b}$. Then, $r > 0$ because $U \times V$ contains $(x,y)$.
-
-Now, consider the open ball $B((x,y), r)$ in $\mathbb{R}^2$ centered at $(x,y)$ with radius $r$. We claim that every point in $B((x,y), r)$ is contained in $U \times V$.
-
-Let $(a,b)$ be any point in $B((x,y), r)$. Then, we have
-By the definition of $r$, we have $|a-x| < r$ and $|b-y| < r$. Therefore,
-It follows that $(a,b) \in U' \times V' \subseteq U \times V$.
-
-Therefore, we have shown that for any open rectangle/square $U \times V$ in $\mathbb{R} \times \mathbb{R}$ containing a point $(x,y)$, there exists an open ball $B$ in $\mathbb{R}^2$ containing $(x,y)$ such that the points in the ball are contained in the rectangle/square $U \times V$.
